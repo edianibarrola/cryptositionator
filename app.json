@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "CryptoPositionCalc",
+    "slug": "CryptoPositionCalc",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "CryptoPositionCalc"
+}
