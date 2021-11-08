@@ -1,11 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.topRow}>Cryptositionator</Text>
+      <TextInput
+      style={styles.input}
+      placeHolder="number"
+      value="12"
+      keyboardType="numeric"
+
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -14,8 +21,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0FF1CE',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  input: {
+    backgroundColor: '#9fb3c7',
+  },
+  topRow: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  }
 });
